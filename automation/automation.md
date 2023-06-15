@@ -15,11 +15,11 @@ yum upgrade -y
 
 ## Clone our custom cyberpanel git repo
 ```commandline
-git clone git@github.com:Infignity/cyberpanel.git
+git clone https://github.com/Infignity/cyberpanel.git
 ```
 
-## Execute install.sh file
+## Execute cyberpanel.sh file
 ```commandline
 cd cyberpanel/
-sh ./install.sh
+sh ./cyberpanel.sh
 ```

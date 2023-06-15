@@ -22,6 +22,7 @@
 #Check_Process() ---> check no other process like Apache is running
 #Check_Provider() ---> check the provider, certain provider like Alibaba or Tencent Cloud may need some special change
 #Check_Argument() ---> parse argument and go to Argument_Mode() or Interactive_Mode() respectively
+
 #Pre_Install_Setup_Repository() ---> setup/install repositories for CentOS and openEuler system.
 #go to Pre_Install_Setup_CN_Repository() if server is within China.
 #Pre_Install_Setup_Git_URL() --->  form up github URL , use Gitee for servers within China.
@@ -576,29 +577,29 @@ else
 fi
 }
 
-Interactive_Mode() {
-echo -e "		CyberPanel Installer v$Panel_Version.$Panel_Build
-
-1. Install CyberPanel.
-
-2. Exit.
-
-"
-read -r -p "  Please enter the number[1-2]: " Input_Number
-echo ""
-case "$Input_Number" in
-  1)
-  Interactive_Mode_Set_Parameter
-  ;;
-  2)
-  exit
-  ;;
-  *)
-  echo -e "  Please enter the right number [1-2]\n"
-  exit
-  ;;
-esac
-}
+#Interactive_Mode() {
+#echo -e "		CyberPanel Installer v$Panel_Version.$Panel_Build
+#
+#1. Install CyberPanel.
+#
+#2. Exit.
+#
+#"
+#read -r -p "  Please enter the number[1-2]: " Input_Number
+#echo ""
+#case "$Input_Number" in
+#  1)
+#  Interactive_Mode_Set_Parameter
+#  ;;
+#  2)
+#  exit
+#  ;;
+#  *)
+#  echo -e "  Please enter the right number [1-2]\n"
+#  exit
+#  ;;
+#esac
+#}
 
 
 Interactive_Mode_Set_Parameter() {
