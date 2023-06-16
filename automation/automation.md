@@ -13,6 +13,13 @@ yum update
 yum upgrade -y
 ```
 
+## Install dependencies
+
+```commandline
+yum install -y curl
+yum install -y git
+```
+
 ## Clone our custom cyberpanel git repo
 ```commandline
 git clone https://github.com/Infignity/cyberpanel.git
